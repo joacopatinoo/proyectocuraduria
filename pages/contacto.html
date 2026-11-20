@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic & Alternative Rock - Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Classic & Alternative Rock</h1>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/servicios.html">Playlists</a>
+            <a href="../pages/nosotros.html">Nosotros</a>
+            <a href="../pages/blog.html">Reseñas</a>
+            <a href="../pages/contacto.html" class="activo">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="caja">
+            <h2>Contacto y Envío de Demos</h2>
+            <p>Completá tus datos para recomendarnos un disco o mandarnos tu canción de Classic Rock o Alternative Rock:</p>
+
+            <label>Nombre o Banda:</label>
+            <input type="text" id="nombre" placeholder="Ej: Ecos del Norte">
+
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="banda@email.com">
+
+            <label>Motivo:</label>
+            <select id="asunto">
+                <option value="demo">Enviar un Demo de mi banda</option>
+                <option value="recomendacion">Recomendar un disco de Classic / Alternative Rock</option>
+                <option value="consulta">Difundir fecha en vivo / recital</option>
+            </select>
+
+            <label>Mensaje:</label>
+            <textarea id="mensaje" rows="4" placeholder="Contanos sobre tu banda o recomendación..."></textarea>
+
+            <button onclick="enviarFormulario()">Enviar</button>
+            <p id="respuesta" style="font-weight: bold;"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Proyecto Final - Classic & Alternative Rock (2026)</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
